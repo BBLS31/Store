@@ -1,0 +1,754 @@
+/*nav, nav .logo, nav ul, nav ul li a, were used to create the transparent navbar
+  Reference: https://www.youtube.com/watch?v=ZotQNKyvZsw*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: double white;
+    color: rgb(12, 0, 180);
+}
+
+/*cart*/
+#cart {
+    color: blue;
+    height: 35px;
+    width: 45px;
+    position: relative;
+    left: 22px;
+    top: 10px;
+
+}
+
+#cart:hover {}
+
+#items {
+    color: white;
+    position: relative;
+    left: -10px;
+    bottom: -2px;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.col:hover .cart1 .col:hover .cart2 .col:hover .cart3 .col:hover .cart4 .col:hover .cart5 .col:hover .cart6 .col:hover .cart7 .col:hover .cart8 .col:hover .cart9 .col:hover .cart10 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+#title1 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    letter-spacing: 45px;
+}
+
+/*#pic1-#pic10 were used to position and customize the pictures*/
+
+#pic1 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 158px;
+    left: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black 5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*image-overlay, image-title, image-info were used to create the image overlays
+  Reference: https://www.youtube.com/watch?v=exb2ab72Xhs*/
+.image-overlay1 {
+    position: absolute;
+    top: 158px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay1>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay1:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay1:hover {
+    opacity: 1;
+}
+
+.image-title1 {
+    font-size: 2em;
+}
+
+.image-info1 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title1,
+.image-info1 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic2 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black 5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#pic2:hover {
+    box-shadow: goldenrod 5px 5px;
+
+}
+
+.image-overlay2 {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay2>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay2:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay2:hover {
+    opacity: 1;
+}
+
+.image-title2 {
+    font-size: 2em;
+}
+
+.image-info2 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title2,
+.image-info2 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic3 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black -5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*The order of the pictures got messed up between pic3 and pic4*/
+#pic3:hover {
+    box-shadow: goldenrod -5px 5px;
+}
+
+.image-overlay3 {
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay3>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay3:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay3:hover {
+    opacity: 1;
+}
+
+.image-title3 {
+    font-size: 2em;
+    letter-spacing: -2px;
+}
+
+.image-info3 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title3,
+.image-info3 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+
+
+#pic4 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 158px;
+    right: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black -5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#pic4:hover {
+    box-shadow: goldenrod -5px 5px
+}
+
+.image-overlay4 {
+    position: absolute;
+    top: 158px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay4>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay4:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay4:hover {
+    opacity: 1;
+}
+
+.image-title4 {
+    font-size: 2em;
+}
+
+.image-info4 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title4,
+.image-info4 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic5 {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    bottom: 210px;
+    right: 570px;
+    border: rgb(73, 3, 81) solid;
+    box-shadow: black 10px 10px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.image-overlay5 {
+    position: absolute;
+    bottom: 210px;
+    right: 570px;
+    width: 400px;
+    height: 300px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay5>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay5:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay5:hover {
+    opacity: 1;
+}
+
+.image-title5 {
+    font-size: 2em;
+}
+
+.image-info5 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title5,
+.image-info5 {
+    position: relative;
+    top: 38px;
+}
+
+
+#title2 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    letter-spacing: 10px;
+}
+
+#pic6 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 158px;
+    left: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black 5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.image-overlay6 {
+    position: absolute;
+    top: 158px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay6>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay6:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay6:hover {
+    opacity: 1;
+}
+
+.image-title6 {
+    font-size: 2em;
+}
+
+.image-info6 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title6,
+.image-info6 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic7 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black 5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#pic7:hover {
+    box-shadow: goldenrod 5px 5px;
+
+}
+
+.image-overlay7 {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay7>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay7:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay7:hover {
+    opacity: 1;
+}
+
+.image-title7 {
+    font-size: 2em;
+}
+
+.image-info7 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title7,
+.image-info7 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic8 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black -5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#pic8:hover {
+    box-shadow: goldenrod -5px 5px;
+}
+
+.image-overlay8 {
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay8>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay8:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay8:hover {
+    opacity: 1;
+}
+
+.image-title8 {
+    font-size: 2em;
+    letter-spacing: -2px;
+}
+
+.image-info8 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title8,
+.image-info8 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic8 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black -5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#pic8:hover {
+    box-shadow: goldenrod -5px 5px;
+}
+
+.image-overlay8 {
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay8>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay8:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay8:hover {
+    opacity: 1;
+}
+
+.image-title8 {
+    font-size: 2em;
+    letter-spacing: -2px;
+}
+
+.image-info8 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title8,
+.image-info8 {
+    position: relative;
+    top: 38px;
+}
+
+#random {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 520px;
+    right: 70px;
+}
+
+
+
+#pic9 {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 158px;
+    right: 20px;
+    border: rgb(1, 1, 77) solid;
+    box-shadow: black -5px 5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.image-overlay9 {
+    position: absolute;
+    top: 158px;
+    right: 20px;
+    width: 300px;
+    height: 250px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay9>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay9:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay9:hover {
+    opacity: 1;
+}
+
+.image-title9 {
+    font-size: 2em;
+}
+
+.image-info9 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title9,
+.image-info9 {
+    position: relative;
+    top: 38px;
+}
+
+
+
+#pic10 {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    bottom: 210px;
+    right: 570px;
+    border: rgb(73, 3, 81) solid;
+    box-shadow: black 10px 10px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.image-overlay10 {
+    position: absolute;
+    bottom: 210px;
+    right: 570px;
+    width: 400px;
+    height: 300px;
+    background: rgba(2, 2, 107, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+
+}
+
+.image-overlay10>* {
+    transform: translatey(40px);
+    transition: transform 0.20s;
+}
+
+.image-overlay10:hover>* {
+    transform: translatey(0);
+}
+
+.image-overlay10:hover {
+    opacity: 1;
+}
+
+.image-title10 {
+    font-size: 2em;
+}
+
+.image-info10 {
+    font-size: 1.20em;
+    margin-top: 0.20;
+}
+
+.image-title10,
+.image-info10 {
+    position: relative;
+    top: 38px;
+}

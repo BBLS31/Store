@@ -1,0 +1,201 @@
+/*Positions and sizes the grey container*/
+.container {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    height: 400px;
+    width: 1050px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*nav, nav .logo, nav ul, nav ul li a, were used to create the transparent navbar with white letters
+  Reference: https://www.youtube.com/watch?v=ZotQNKyvZsw*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: double white;
+    color: rgb(12, 0, 180);
+}
+
+
+/*Colors the text, above the radio, white*/
+p {
+    color: white;
+}
+
+/*Positions the form on the right side of the div container*/
+.form-label,
+.form-control {
+    width: 200px;
+    position: relative;
+    left: 500px;
+    bottom: 155px;
+}
+
+#thing3 {
+    position: relative;
+    right: 50px;
+
+}
+
+/*Positions the username input next to the name and surname input*/
+#UN {
+    position: relative;
+    left: 750px;
+    bottom: 400px;
+}
+
+/*Positions the password input next to the phone number input*/
+#pwd {
+    position: relative;
+    left: 750px;
+    bottom: 400px;
+}
+
+/*Positions the button a few pixels under the password input space*/
+#btn2 {
+    position: absolute;
+    left: 850px;
+    top: 220px;
+    padding: 2px;
+}
+
+/*Slightly decreases the opacity of the sign up button when hovered over*/
+#btn2:hover {
+    opacity: 50%;
+}
+
+/*The background gradient of the sign up page*/
+.animation {
+    background: linear-gradient(to left, #4c1d60, #ca2a1e);
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Reference: https://www.youtube.com/watch?v=5RoXCs54CN8
+Box animation*/
+.boxes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.boxes li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(2, 19, 104, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+/*Properties of the animatied children elements*/
+.boxes li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.boxes li:nth-child(2) {
+    left: 12%;
+    width: 32px;
+    height: 32px;
+    animation-delay: 1.5s;
+    animation-duration: 9s;
+}
+
+.boxes li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.boxes li:nth-child(4) {
+    left: 42%;
+    width: 151px;
+    height: 151px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.boxes li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0.5s;
+}
+
+.boxes li:nth-child(6) {
+    left: 15%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 3.5s;
+}
+
+/*Set up of the children animations*/
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        /*Adds movement in the y-axis with no rotation*/
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        /*Adds movement in the y-axis with full rotation*/
+        opacity: 2;
+    }
+}

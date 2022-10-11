@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Reference: https://www.youtube.com/watch?v=fBRzD6dwJfw
+Gradient animation*/
+.gradient {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #9c0144, #0704af, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+/*Activates animation*/
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/*nav, nav .logo, nav ul, nav ul li a, were used to create the transparent navbar
+  Reference: https://www.youtube.com/watch?v=ZotQNKyvZsw*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: double white;
+    color: rgb(12, 0, 180);
+}
+
+/*Adds hover animation and effects to the welcome text in the index page*/
+.animated {
+    color: white;
+    font-size: 12rem;
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.animated:hover {
+    text-shadow: 0.025em 0.05em 0 rgb(67, 3, 69);
+    border-bottom: 10px rgb(35, 2, 88) solid;
+}
+
+.animated {
+    background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+.animated:hover {
+    background-position: -100%;
+}
+
+#formpage {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+#formpage:hover {
+    border: 5px rgb(39, 4, 176) solid;
+    border-radius: 10px;
+    background-color: rgb(32, 4, 76);
+}
+
+#words {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+#words:hover {
+    border: blueviolet solid 5px;
+    border-radius: 5px;
+    background-color: black;
+}
