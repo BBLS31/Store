@@ -14,4 +14,4 @@ How to download:
 Use my Github link https://github.com/BBLS31/Store and press the download button
 
 How to use it:
-- Open the program within visual studio codes live server and do with it as you may.
+- Open the project file and then open the file with a chrome icon 
